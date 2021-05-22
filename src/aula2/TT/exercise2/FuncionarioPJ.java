@@ -4,8 +4,8 @@ import aula2.TT.exercise2.interfaces.Funcionario;
 
 public class FuncionarioPJ implements Funcionario {
 
-    private int cargaHorariaMensal;
-    private double precoPorHora;
+    private final int cargaHorariaMensal;
+    private final double precoPorHora;
 
     public FuncionarioPJ(int cargaHorariaMensal, double precoPorHora) {
         this.cargaHorariaMensal = cargaHorariaMensal;
