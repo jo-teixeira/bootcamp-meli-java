@@ -1,6 +1,6 @@
 package aula2.TT.exercise2;
 
-import class4.list4.ex4.interfaces.Funcionario;
+import aula2.TT.exercise2.interfaces.Funcionario;
 
 public abstract class FuncionarioCLT implements Funcionario {
 
