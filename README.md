@@ -23,6 +23,6 @@ desenvolvimento backend java, fornecido pelo mercado livre / digital house.
 * **Aula 1 (TT) -** Coleções, listas, mapas, iteradores e arrays;  
 * **Aula 2 (TM) -** Classes, objetos, métodos, visibilidade e encapsulamento;  
 * **Aula 2 (TT) -** Herança, classe abstrata e polimorfismo;  
-* **Aula 3 (TT) -** Interfaces, Factory Method (1), múltiplas implementações e generics;  
+* **Aula 3 (TM) -** Interfaces, Factory Method (1), múltiplas implementações e generics;  
 * **Aula 3 (TT) -** Comparator, expreções lambda e Factory method (2);  
 * **Aula 4 (TT) -** Atividades práticas de revisão;  
