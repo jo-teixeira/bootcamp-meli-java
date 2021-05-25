@@ -1,5 +1,7 @@
 package aula2.TT.exercise2;
 
+import java.util.Comparator;
+
 public class Diretor extends FuncionarioCLT {
 
     private final static double BONIFICACAO = 0;
@@ -13,7 +15,6 @@ public class Diretor extends FuncionarioCLT {
         super(tipo, 0, BONIFICACAO, HORAS_SEMANAIS, HORAS_DESCANSO_REMUNERADO, SALARIO_BASE);
         this.lucroDaEmpresa = lucroDaEmpresa;
     }
-
 
     @Override
     public void pagarSalario(){
