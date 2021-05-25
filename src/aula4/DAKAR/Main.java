@@ -1,6 +1,5 @@
 package bootcamp.DAKAR;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.List;
 
 public class Main {
@@ -12,11 +11,14 @@ public class Main {
         corrida.registrarVeiculo(Moto.class, 30, 7, 23, "ABA-2933");
         corrida.registrarVeiculo(Moto.class, 100, 20, 30, "ABA-2935");
         corrida.registrarVeiculo(Moto.class, 100, 20, 30, "ABA-2936");
-        List<Veiculo> veiculoList = corrida.getVeiculoList();
+
+        List<Veiculo> veiculoList = corrida.getListaVeiculos();
         corrida.removerVeiculo(veiculoList.get(0));
         System.out.println(veiculoList);
+
         corrida.removerVeiculo("ABA-2933");
         System.out.println(veiculoList);
+
         try{
             corrida.removerVeiculo("ABA-2934");
         } catch (Exception e) {
@@ -30,7 +32,5 @@ public class Main {
         List<Veiculo> veiculosVencedores = corrida.vencedor();
         System.out.println("Lista de Veículos vencedores. Caso haja mais de um, houve impate");
         System.out.println(veiculosVencedores);
-
-
     }
 }

@@ -1,7 +1,5 @@
 package bootcamp.DAKAR;
 
-import java.util.Objects;
-
 public abstract class Veiculo {
 
     private double velocidade;
@@ -18,6 +16,7 @@ public abstract class Veiculo {
         this.placa = placa;
         this.peso = peso;
         this.rodas = rodas;
+
     }
 
     public double getVelocidade() {

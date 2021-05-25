@@ -6,15 +6,15 @@ import java.util.Map;
 
 public class GuardaRoupa {
 
-    private Map<Integer, List<Vestuario>> mapaDeRoupas = new HashMap<>();
-    private Integer contador = 0;
+    private static final Map<Integer, List<Vestuario>> mapaDeRoupas = new HashMap<>();
+    private static Integer contador = 0;
 
-    public Integer guardarVestuarios(List<Vestuario> listaDeVestuario) {
-        this.mapaDeRoupas.put(contador, listaDeVestuario);
-        return this.contador++;
+    public static Integer guardarVestuarios(List<Vestuario> listaDeVestuario) {
+        mapaDeRoupas.put(contador, listaDeVestuario);
+        return contador++;
     }
 
-    public void mostrarVestuarios() {
+    public static void mostrarVestuarios() {
         for (Map.Entry<Integer, List<Vestuario>> entrada : mapaDeRoupas.entrySet()) {
             for (Vestuario vestuario : entrada.getValue()) {
                 System.out.println(entrada.getKey() + " - Marca: " + vestuario.getMarca() + " / Modelo: " + vestuario.getModelo());
@@ -22,11 +22,12 @@ public class GuardaRoupa {
         }
     }
 
-    public List<Vestuario> devolverVestuarios(Integer id) throws Exception {
-        List<Vestuario> resultado = this.mapaDeRoupas.get(id);
+    public static List<Vestuario> devolverVestuarios(Integer id) throws Exception {
+        List<Vestuario> resultado = mapaDeRoupas.get(id);
         if (resultado == null){
             throw new Exception("Lista de vestuários não encontrada");
         }
+
         return resultado;
     }
 

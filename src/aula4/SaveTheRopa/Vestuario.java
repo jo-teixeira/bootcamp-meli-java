@@ -2,8 +2,8 @@ package bootcamp.SaveTheRopa;
 
 public class Vestuario {
 
-    private String marca;
-    private String modelo;
+    private final String marca;
+    private final String modelo;
 
     public Vestuario(String marca, String modelo) {
         this.marca = marca;
