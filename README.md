@@ -1,6 +1,4 @@
-# Bootcamp desenvolvimento Java Backend<br>(Mercado Livre - Digital House)
-
-------
+# Bootcamp desenvolvimento Java Backend<br>(Mercado Livre)
 
 Repositório para todas as atividades implementadas durante o bootcamp de 
 desenvolvimento backend java, fornecido pelo mercado livre / digital house.
