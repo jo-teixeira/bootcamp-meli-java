@@ -16,6 +16,8 @@ desenvolvimento backend java, fornecido pelo mercado livre / digital house.
 ---
 
 <h2><b>Descrição dos arquivos</b></h2>
+Foram anexados apenas os arquivos <b>".java"</b>.
+Para alguns casos é necessário iniciar um projeto Spring.
 
 <h3>Modulo 1 - Introdução ao java</h3>
 
