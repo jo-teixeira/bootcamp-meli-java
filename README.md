@@ -18,6 +18,7 @@ desenvolvimento backend java, fornecido pelo mercado livre / digital house.
 <h2><b>Descrição dos arquivos</b></h2>
 
 <h3>Modulo 1 - Introdução ao java</h3>
+
 * **Aula 1 (TM) -** Sintaxes, variáveis, tipos de dados e estruturas de controle;  
 * **Aula 1 (TT) -** Coleções, listas, mapas, iteradores e arrays;  
 * **Aula 2 (TM) -** Classes, objetos, métodos, visibilidade e encapsulamento;  
@@ -27,5 +28,6 @@ desenvolvimento backend java, fornecido pelo mercado livre / digital house.
 * **Aula 4 (TT) -** Atividades práticas de revisão;  
 
 <h3>Modulo 2 - Java Spring Framework</h3>
+
 * **Aula 1 -** Introdução ao Spring, prática com números romanos, código morse e CRUD;  
 
