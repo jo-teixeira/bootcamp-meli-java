@@ -31,5 +31,6 @@ Para alguns casos é necessário iniciar um projeto Spring.
 
 <h3>Modulo 2 - Java Spring Framework</h3>
 
-* **Aula 1 -** Introdução ao Spring, prática com números romanos, código morse e CRUD;  
+* **Aula 1 (TM) -** Introdução ao Spring, prática com números romanos, código morse;
+* **Aula 1 (TT) -** CRUD no Spring; 
 

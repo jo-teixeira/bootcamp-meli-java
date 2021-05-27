@@ -1,8 +1,8 @@
-package modulo2.aula1.controllers;
+package modulo2.aula1.TM.java.com.mercadolibre.projetospring.controllers;
 
-import modulo2.aula1.models.Response;
-import modulo2.aula1.services.MorseService;
-import modulo2.aula1.services.RomanService;
+import modulo2.aula1.TM.java.com.mercadolibre.projetospring.models.Response;
+import modulo2.aula1.TM.java.com.mercadolibre.projetospring.services.MorseService;
+import modulo2.aula1.TM.java.com.mercadolibre.projetospring.services.RomanService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
