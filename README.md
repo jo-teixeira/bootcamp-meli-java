@@ -33,4 +33,5 @@ Para alguns casos é necessário compilar sob um projeto Spring.
 
 * **Aula 1 (TM) -** Introdução ao Spring, prática com números romanos, código morse;
 * **Aula 1 (TT) -** CRUD no Spring; 
-
+* **Aula 2 (TM) -** Calculadora de metros quadrados e de idade no Spring; 
+* **Aula 2 (TT) -** Sistema de diploma, restaurante e loja de produtos; 
