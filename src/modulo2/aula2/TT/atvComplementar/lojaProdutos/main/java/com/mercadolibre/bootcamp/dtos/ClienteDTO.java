@@ -1,21 +1,19 @@
 package com.mercadolibre.bootcamp.dtos;
 
 import com.mercadolibre.bootcamp.models.Cliente;
-import com.mercadolibre.bootcamp.models.Pedido;
 import org.hibernate.validator.constraints.br.CPF;
 
-import javax.persistence.*;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
-import java.util.ArrayList;
 
 public class ClienteDTO {
     @NotNull(message = "Campo obrigatório")
     private String nome;
 
-    @CPF
+    @CPF(message = "CPF inválido")
     private String cpf;
 
-    @NotNull(message = "Campo obrigatório")
+    @Email(message = "E-mail inválido")
     private String email;
 
     @NotNull(message = "Campo obrigatório")
@@ -61,6 +59,6 @@ public class ClienteDTO {
     }
 
     public Cliente toModel() {
-        return new Cliente(null, this.nome, this.cpf, this.email, this.telefone, new ArrayList<>());
+        return new Cliente(null, this.nome, this.cpf, this.email, this.telefone);
     }
 }

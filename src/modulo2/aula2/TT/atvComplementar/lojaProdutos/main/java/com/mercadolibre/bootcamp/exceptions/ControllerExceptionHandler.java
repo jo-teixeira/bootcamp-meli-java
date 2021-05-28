@@ -1,6 +1,7 @@
 package com.mercadolibre.bootcamp.exceptions;
 
 import com.mercadolibre.bootcamp.exceptions.ObjectNotFoundException;
+import org.springframework.core.annotation.Order;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

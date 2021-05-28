@@ -2,22 +2,12 @@ package com.mercadolibre.bootcamp.services;
 
 import com.mercadolibre.bootcamp.dtos.ProdutoDTO;
 import com.mercadolibre.bootcamp.models.Produto;
-import com.mercadolibre.bootcamp.repositories.ProdutoRepository;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
-public class ProdutoService {
-    @Autowired
-    private ProdutoRepository produtoRepository;
+public interface ProdutoService {
 
-    public Produto create(ProdutoDTO produtoDTO) {
-        return produtoRepository.save(produtoDTO.toModel());
-    }
+    Produto create(ProdutoDTO produtoDTO);
 
-    public List<Produto> findAllByIds(List<Integer> produtosIds) {
-        return produtoRepository.findAllById(produtosIds);
-    }
+    List<Produto> findAllByIds(List<Integer> produtosIds);
 }

@@ -9,5 +9,5 @@ import java.util.List;
 
 @Repository
 public interface PedidoRepository extends JpaRepository<Pedido, Integer> {
-    public List<Pedido> getByCliente(Cliente cliente);
+    public List<Pedido> findByClienteId(Integer clienteId);
 }

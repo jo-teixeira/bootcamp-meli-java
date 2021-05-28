@@ -1,12 +1,9 @@
 package com.mercadolibre.bootcamp.models;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
-import net.bytebuddy.dynamic.loading.InjectionClassLoader;
 import org.hibernate.validator.constraints.br.CPF;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,11 +17,11 @@ public class Cliente {
     @NotNull(message = "Campo obrigatório")
     private String nome;
 
-    @CPF
+    @CPF(message = "CPF inválido")
     @Column(unique = true)
     private String cpf;
 
-    @NotNull(message = "Campo obrigatório")
+    @Email(message = "Email inválido")
     private String email;
 
     @NotNull(message = "Campo obrigatório")
@@ -33,13 +30,13 @@ public class Cliente {
     @OneToMany(mappedBy = "cliente")
     private List<Pedido> pedidos;
 
-    public Cliente(Integer id, String nome, String cpf, String email, String telefone, List<Pedido> pedidos) {
+    public Cliente(Integer id, String nome, String cpf, String email, String telefone) {
         this.id = id;
         this.nome = nome;
         this.cpf = cpf;
         this.email = email;
         this.telefone = telefone;
-        this.pedidos = pedidos;
+        this.pedidos = new ArrayList<>();
     }
 
     public Cliente() {
