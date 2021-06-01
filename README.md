@@ -37,3 +37,4 @@ Para alguns casos é necessário compilar sob um projeto Spring.
 * **Aula 2 (TT) -** Sistema de diploma, restaurante e loja de produtos;
 * **Aula 3 (TM) -** Revisão MVC, injeção de dependência exercício calorias;  
 * **Aula 3 (TT) -** Exercício star wars e melhoria projeto loja produtos (desafio); 
+* **Aula 4 -** Tratamento de exceçoes e status code; 
