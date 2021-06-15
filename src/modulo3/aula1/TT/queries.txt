@@ -1,0 +1,42 @@
+TT - SQL - GRUPO 5
+
+1 -
+SELECT * FROM cliente
+WHERE id > 5;
+
+2 -
+SELECT * FROM cliente
+WHERE id > 5
+ORDER BY created_at DESC;
+
+3 -
+SELECT * FROM cliente
+WHERE id > 5
+AND tipo = 'PJ'
+ORDER BY created_at DESC;
+
+4 -
+SELECT * FROM cliente
+WHERE id > 5
+AND tipo = 'CPF';
+
+5 -
+SELECT * FROM pedidos
+WHERE registros
+BETWEEN '2020-01-01' AND '2020-01-31';
+
+6 -
+SELECT * FROM pedidos
+LIMIT 10;
+
+7 -
+SELECT DISTINCT sexo FROM produtos;
+
+8 -
+SELECT SUM(valor_total) as 'Soma Total' FROM pedidos
+WHERE fk_cliente = 48
+AND tipo = 'renda';
+
+9 -
+SELECT COUNT(1) FROM pedidos
+WHERE status = "cancelado"
