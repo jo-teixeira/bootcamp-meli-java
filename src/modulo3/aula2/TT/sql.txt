@@ -1,0 +1,73 @@
+# 2
+INSERT INTO movies
+VALUES (
+	NULL,
+    NULL,
+    NULL,
+    'filmeTeste',
+    10.0,
+    10,
+    '2010-10-04 00:00:00',
+    360,
+    5
+);
+
+
+# 3
+INSERT INTO genres
+VALUES (
+	NULL,
+    NULL,
+    NULL,
+    'generoTeste',
+    13,
+    1
+);
+
+
+# 4
+UPDATE movies
+SET genre_id = 13
+WHERE id = 22;
+
+
+# 5
+UPDATE actors
+SET favorite_movie_id = 22
+WHERE id = 49;
+
+
+# 6
+CREATE TEMPORARY TABLE moviesVol AS (
+	SELECT *
+    FROM movies
+);
+
+
+# 7
+SET SQL_SAFE_UPDATES=0;
+DELETE FROM moviesVol
+WHERE awards < 5;
+SET SQL_SAFE_UPDATES=1;
+
+
+# 8
+SELECT g.name Genre
+FROM movies m INNER JOIN genres g ON g.id = m.genre_id
+GROUP BY g.id;
+
+
+# 9
+SELECT a.*
+FROM actors a INNER JOIN movies m ON a.favorite_movie_id = m.id
+WHERE awards > 3;
+
+
+# 10
+EXPLAIN SELECT * FROM movies;
+EXPLAIN DELETE FROM moviesVol WHERE awards < 5;
+
+
+# 12
+CREATE INDEX awards_movie_index
+ON movies (awards);
