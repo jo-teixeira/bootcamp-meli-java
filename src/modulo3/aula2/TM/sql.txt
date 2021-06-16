@@ -1,0 +1,63 @@
+# 1)
+select
+	s.title as Serie,
+    g.name as Genre
+from
+	series s
+	inner join genres g on g.id = s.genre_id
+order by
+	Serie;
+
+# 2)
+select
+	e.title as Episode,
+    concat(a.first_name, ' ', a.last_name) as FullName
+from
+	episodes e
+    inner join actor_episode ae on ae.episode_id = e.id
+    inner join actors a on a.id = ae.actor_id
+order by
+	Episode;
+
+# 3)
+select
+	s.title Serie,
+    count(sa.id) Seasons
+from
+	series s
+    inner join seasons sa on sa.serie_id = s.id
+group by
+	s.id
+order by
+	Serie;
+
+# 4)
+select
+	g.name Genre,
+    count(m.id) Movies
+from
+	movies m
+    right join genres g on g.id = m.genre_id
+group by
+	g.id
+having
+	Movies > 2
+order by
+	Genre;
+
+# 5)
+select
+	a.first_name,
+    a.last_name
+from
+	movies m
+    inner join actor_movie am on am.movie_id = m.id
+		and (am.movie_id in (3, 4))
+    inner join actors a on a.id = am.actor_id
+group by
+	a.id
+having
+	count(a.id) > 1
+order by
+	a.first_name,
+    a.last_name;

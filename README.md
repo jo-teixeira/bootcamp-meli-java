@@ -42,4 +42,6 @@ Para alguns casos é necessário compilar sob um projeto Spring.
 <h3>Modulo 3 - SQL</h3>
 
 * **Aula 1 (TM) -** CAP, base de dados DER e tipos de dados;
-* **Aula 1 (TT) -** SELECT e funções de agregação; 
+* **Aula 1 (TT) -** SELECT e funções de agregação;
+* **Aula 2 (TM) -** JOIN, GROUP BY, HAVING e subConsultas;
+* **Aula 2 (TT) -** Normalização, DML, views, plano de execução e índices; 
